@@ -1,4 +1,10 @@
 #!/usr/bin/python
+# This script is called by CRON to monitor the 
+# Temperatures and Humidities in the Main Cooler.
+# It can also be called by watchtemps or another
+# program or utility
+
+
 import time
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
