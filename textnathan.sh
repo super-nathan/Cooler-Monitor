@@ -4,6 +4,15 @@
 #
 # Copyright (C) 2015 TextMagic Ltd.
 
+
+############################################
+# More info available here:
+# https://www.textmagic.com/docs/api/start/
+############################################
+
+
+
+
 readonly E_OK=0
 readonly E_INVALID_PARAMETERS=1
 readonly E_MISSING_CREDENTIALS=2

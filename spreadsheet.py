@@ -5,6 +5,15 @@
 # program or utility
 
 
+## Use this video for help with Google API intereation
+# https://www.youtube.com/watch?v=vISRn5qFrkM
+
+
+## for gspread
+# https://github.com/burnash/gspread
+
+
+
 import time
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
@@ -16,7 +25,7 @@ import Adafruit_DHT
 sensor = Adafruit_DHT.DHT22
 
 # Example using a Raspberry Pi with DHT sensor
-# connected to GPIO23.
+# connected to GPI018.
 pin = 18
 
 
@@ -24,6 +33,10 @@ pin = 18
 # to 15 times to get a sensor reading (waiting 2 seconds between each retry).
 humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
 
+
+
+## This is a tool that uses celcius. We are American
+# so lets dumb it down for us
 Celsius = temperature
 
 temperature = 9.0/5.0 * Celsius + 32
